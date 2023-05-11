@@ -1,0 +1,62 @@
+<style>
+.heart-btn {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, -50%);
+}
+.conten {
+  border: 2px solid red;
+  padding: 13px 16px;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+}
+.conten .heart {
+  height: 90px;
+  width: 90px;
+  background-size: 2900%;
+  position: absolute;
+  top: 50%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+}
+.heart:hover {
+  background-position: right;
+  animation: animate .8s steps(28) 1;
+}
+@keyframes animate {
+  0% {
+   background-position: left;
+  }
+  100% {
+   background-position: right;
+  }
+
+}
+.like {
+  margin-left: 30px;
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}
+.numb:before {
+  content: "12";
+  font-size: 21px;
+  font-weight: 600;
+  color: #9c9496;
+  margin-left: 7px;
+}
+</style>
+<div class="contain">
+  <p>Tags</p>
+ <a href="#" class="tags">History</a>
+ <a href="#" class="tags">Nigeria</a>
+</div>
+<div class="heart-btn">
+  <div class="conten">
+    <span class="heart"></span>
+    <span class="like">Like</span>
+    <span class="numb">12</span>
+  </div>
+</div>
